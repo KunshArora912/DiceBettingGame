@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, select {
+  margin-left: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.glass-icon {
+  position: absolute;
+  cursor: grab;
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+}
+
+.glass-icon:active {
+  cursor: grabbing;
+}
+

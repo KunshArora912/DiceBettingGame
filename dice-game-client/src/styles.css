@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column; /* Adjusted to stack the elements vertically */
+  align-items: center; /* Center-align the bet input */
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 150px; /* Increased margin to move papers further down */
+}
+
+.bet-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 40px;
+  margin-top: 80px;
+
+}
+
+.bet-input input {
+  width: 80px; /* Increase the width as needed */
+  height: 20px; /* Increase the height as needed */
+  font-size: 30px; /* Adjust font size to match the input box size */
+  padding: 12px; /* Add padding for better text alignment */
+}
+
+.bet-input label {
+  margin-right: 20px;
+}
+
+.glass-icon {
+  position: absolute;
+  cursor: grab;
+  width: 50px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  top: 150px; /* Move the glass up from its current position */
+  left: 50px; /* Ensure it stays aligned with the desired position */
+}
+
+
+.glass-icon:active {
+  cursor: grabbing;
+}
+
+.bet-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Increased margin-top to push papers further down */
+}
+
+.bet-option {
+  flex: 1;
+  min-width: 200px;
+  height: 200px; /* Increased height */
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  font-size: 40px; /* Increased font size */
+  font-weight: bold;
+}
+
+.dice-result {
+  margin-top: -375px; /* Adjusted margin-top */
+}
+
+.dice {
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.payout {
+  font-size: 35px;
+  color: green;
+}
+
+.results-table {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  width: 200px; /* Adjusted width */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.results-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th, .results-table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.results-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.payout {
+  font-size: 40px;
+  color: green; /* Change text color to green */
+}
+
+/* Existing styles... */
+
+.rules-button {
+  position: fixed; /* Fixed positioning ensures it stays in place */
+  top: 20px;
+  right: 280px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.rules-button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
